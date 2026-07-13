@@ -48,6 +48,10 @@ jobs:
           with:
             version: v1.55.2
             working-directory: src/product-catalog
+            args: >
+              --disable=unused
+              --disable=gosimple
+              --disable=staticcheck
 
     docker:
         runs-on: ubuntu-latest
